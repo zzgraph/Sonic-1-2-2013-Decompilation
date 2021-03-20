@@ -82,29 +82,32 @@ INCLUDES  += 	-I./Sonic12Decomp
 INCLUDES += $(LIBS)
 
 # Main Sources
-SOURCES	+=	Sonic12Decomp/Animation \
-			Sonic12Decomp/Audio \
-			Sonic12Decomp/Collision \
-			Sonic12Decomp/Debug \
-			Sonic12Decomp/Drawing \
-			Sonic12Decomp/Ini \
-			Sonic12Decomp/Input \
-			Sonic12Decomp/main \
-			Sonic12Decomp/Math \
-			Sonic12Decomp/Network \
-			Sonic12Decomp/Object \
-			Sonic12Decomp/Palette \
-			Sonic12Decomp/PauseMenu \
-			Sonic12Decomp/Reader \
-			Sonic12Decomp/RetroEngine \
-			Sonic12Decomp/RetroGameLoop \
-			Sonic12Decomp/Scene \
-			Sonic12Decomp/Scene3D \
-			Sonic12Decomp/Script \
-			Sonic12Decomp/Sprite \
-			Sonic12Decomp/String \
-			Sonic12Decomp/Text \
-			Sonic12Decomp/Userdata
+SOURCES = dependencies/all/upng/upng.cpp  \
+          RSDKv4/Animation.cpp     \
+          RSDKv4/Audio.cpp         \
+          RSDKv4/Collision.cpp     \
+          RSDKv4/Debug.cpp         \
+          RSDKv4/Drawing.cpp       \
+          RSDKv4/Ini.cpp           \
+          RSDKv4/Input.cpp         \
+          RSDKv4/main.cpp          \
+          RSDKv4/Math.cpp          \
+          RSDKv4/Network.cpp       \
+          RSDKv4/Object.cpp        \
+          RSDKv4/Palette.cpp       \
+          RSDKv4/PauseMenu.cpp     \
+          RSDKv4/Reader.cpp        \
+          RSDKv4/RetroEngine.cpp   \
+          RSDKv4/RetroGameLoop.cpp \
+          RSDKv4/Scene.cpp         \
+          RSDKv4/Scene3D.cpp       \
+          RSDKv4/Script.cpp        \
+          RSDKv4/Sprite.cpp        \
+          RSDKv4/StartMenu.cpp     \
+          RSDKv4/String.cpp        \
+          RSDKv4/Text.cpp          \
+          RSDKv4/Userdata.cpp      \
+
 
 PKGSUFFIX ?= $(SUFFIX)
 
